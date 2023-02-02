@@ -9,7 +9,6 @@ try {
     const transporter = nodemailer.createTransport({
         host:process.env.HOST,
         service: process.env.SERVICE,
-        port: 465,
         secure: TRUE,
         auth:{
             user:process.env.USER,
