@@ -69,7 +69,7 @@ router.post('/createuser', [
 
       
 
-      const url =`${process.env.CYCLIC_URL}/api/auth/rusers/${user._id}/rverify/${token.token}`
+      const url =`${process.env.CYCLIC_URL}/rusers/${user._id}/rverify/${token.token}`
 
       console.log("before going in sendEmail.js");
       await sendEmail(user.email,"Verify Email",url)
