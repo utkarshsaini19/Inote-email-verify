@@ -22,6 +22,12 @@ try {
         to: email,
         subject: subject,
         text: text
+    },()=>{
+        if(error)
+        console.log(error);
+        else{
+            console.log("Email sent");
+        }
     })
 
     console.log("Email sent successfully");
